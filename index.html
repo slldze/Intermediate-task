@@ -3,16 +3,1075 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Intermediate task</title>
-    <meta property="og:url" content="http://127.0.0.1:5500/index.html" />
+
+    <title>Find Homes for Rent and Sale</title>
+
+    <meta
+      name="description"
+      content="Buy, sell, rent or lease properties easily on one platform."
+    />
+
+    <meta name="robots" content="index,follow" />
+
+    <meta
+      name="google-site-verification"
+      content="CXtPqZHnyqR2oAkqWcA-MkzSj9Aci5FNeaKXEIg0ZXs"
+    />
+
+    <meta property="og:url" content="https://slldze.github.io/lesson-12-/" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Intermediate task" />
-    <meta property="og:description" content="About Lesson 12" />
+    <meta property="og:title" content="Find Homes for Rent and Sale" />
+    <meta
+      property="og:description"
+      content="Buy, sell, rent or lease properties easily on one platform."
+    />
     <meta
       property="og:image"
       content="https://raw.githubusercontent.com/slldze/Intermediate-task/refs/heads/main/src/img/img.jpg"
     />
+
     <link rel="stylesheet" href="css/final.css" />
   </head>
-  <body></body>
+  <body class="bg-[#f3f3f3] text-[#222222]">
+    <header
+      class="mx-auto flex max-w-[1440px] items-center justify-between px-[20px] pt-[30px] pb-[20px] min-[769px]:px-[40px] min-[1440px]:px-[60px]"
+    >
+      <a href="index.html" class="h-[48px] w-[48px] shrink-0">
+        <img
+          src="src/img/logo.png"
+          alt="logo"
+          class="h-[48px] w-[48px] object-contain"
+        />
+      </a>
+
+      <nav class="flex items-center">
+        <ul class="hidden items-center gap-8 min-[769px]:flex">
+          <li>
+            <a
+              href="index.html"
+              class="border-b-2 border-transparent pb-1 text-[14px] transition hover:border-green-500"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="index.html"
+              class="border-b-2 border-transparent pb-1 text-[14px] transition hover:border-green-500"
+            >
+              Discover
+            </a>
+          </li>
+          <li>
+            <a
+              href="index.html"
+              class="border-b-2 border-transparent pb-1 text-[14px] transition hover:border-green-500"
+            >
+              Contact us
+            </a>
+          </li>
+          <li>
+            <a
+              href="index.html"
+              class="border-b-2 border-transparent pb-1 text-[14px] transition hover:border-green-500"
+            >
+              Sign in
+            </a>
+          </li>
+          <li>
+            <button
+              class="rounded-[12px] bg-green-500 px-5 py-3 text-white transition hover:opacity-90"
+            >
+              Sell Something
+            </button>
+          </li>
+        </ul>
+
+        <form class="group relative min-[769px]:hidden">
+          <input
+            type="text"
+            name="mobile-search"
+            id="mobile-search"
+            placeholder="Search..."
+            class="absolute right-0 top-1/2 h-12 w-0 -translate-y-1/2 rounded-full border border-gray-300 bg-white pl-4 pr-12 text-sm outline-none transition-all duration-300 group-hover:w-[180px] group-focus-within:w-[180px]"
+          />
+          <img
+            src="src/img/search.png"
+            alt="Search"
+            class="relative z-10 h-8 w-8 mr-[4px]"
+          />
+        </form>
+      </nav>
+    </header>
+
+    <main
+      class="mx-auto max-w-[1440px] px-5 pb-[150px] min-[769px]:px-10 min-[769px]:pb-10 min-[1440px]:px-[60px]"
+    >
+      <section
+        class="flex flex-col gap-6 min-[769px]:grid min-[769px]:grid-cols-[260px_1fr] min-[769px]:items-start min-[1025px]:grid-cols-[300px_1fr]"
+      >
+        <section class="order-1 min-[769px]:order-2">
+          <div
+            class="relative h-[420px] overflow-hidden rounded-[24px] bg-[#f8f8f8] min-[769px]:h-[620px]"
+          >
+            <img
+              src="src/img/img.jpg"
+              alt="main img"
+              class="absolute inset-0 h-full w-full object-cover"
+            />
+
+            <div
+              class="absolute inset-0 bg-gradient-to-b from-white/90 via-white/40 to-transparent"
+            ></div>
+
+            <div
+              class="absolute top-8 left-1/2 z-10 w-[85%] -translate-x-1/2 text-center min-[769px]:top-[70px]"
+            >
+              <h1
+                class="text-[32px] font-semibold leading-[1.2] text-[#2b2b2b] min-[769px]:text-[42px] min-[1440px]:text-[48px]"
+              >
+                Find the house you want easily
+              </h1>
+
+              <h4
+                class="mt-4 text-[14px] text-[#6f6f6f] min-[769px]:text-[14px] min-[1440px]:text-[16px]"
+              >
+                Buy, sell, rent or lease on just one platform
+              </h4>
+
+              <form class="hidden min-[769px]:mt-8 min-[769px]:block">
+                <div class="relative mx-auto w-[324px]">
+                  <input
+                    type="text"
+                    name="search"
+                    id="search"
+                    placeholder="Search..."
+                    class="h-12 w-full rounded-[12px] border border-[#d9d9d9] bg-white px-4 pr-10 outline-none shadow-sm"
+                  />
+                  <img
+                    src="src/img/search.png"
+                    alt="Search"
+                    class="absolute right-4 top-1/2 h-5 w-5 -translate-y-1/2"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <aside
+          class="order-2 rounded-[24px] bg-white p-5 shadow-sm min-[769px]:order-1"
+        >
+          <h3 class="mb-3 text-[14px] font-semibold">Location</h3>
+          <select
+            title="Choose location"
+            id="location"
+            name="location"
+            class="mb-6 h-12 w-full rounded-[12px] border border-[#d9d9d9] bg-white px-4 text-[13px] outline-none"
+          >
+            <option value="all">All Kenya</option>
+            <option value="nairobi">Nairobi</option>
+            <option value="mombasa">Mombasa</option>
+          </select>
+
+          <h3 class="mb-3 text-[14px] font-semibold">Property</h3>
+          <form class="space-y-2">
+            <div class="flex items-start gap-2 text-[12px] text-[#555555]">
+              <input
+                type="checkbox"
+                id="rent-houses"
+                name="property"
+                class="mt-[2px]"
+              />
+              <label for="rent-houses"
+                >Houses & Apartments for Rent | 9548</label
+              >
+            </div>
+            <div class="flex items-start gap-2 text-[12px] text-[#555555]">
+              <input
+                type="checkbox"
+                id="sale-houses"
+                name="property"
+                class="mt-[2px]"
+              />
+              <label for="sale-houses"
+                >Houses & Apartments for Sale | 9548</label
+              >
+            </div>
+            <div class="flex items-start gap-2 text-[12px] text-[#555555]">
+              <input
+                type="checkbox"
+                id="rent-land"
+                name="property"
+                class="mt-[2px]"
+              />
+              <label for="rent-land">Land & Plots for Rent | 9548</label>
+            </div>
+            <div class="flex items-start gap-2 text-[12px] text-[#555555]">
+              <input
+                type="checkbox"
+                id="sale-land"
+                name="property"
+                class="mt-[2px]"
+              />
+              <label for="sale-land">Land & Plots for Sale | 9548</label>
+            </div>
+            <div class="flex items-start gap-2 text-[12px] text-[#555555]">
+              <input
+                type="checkbox"
+                id="commercial-rent"
+                name="property"
+                class="mt-[2px]"
+              />
+              <label for="commercial-rent"
+                >Commercial Property for Rent | 9548</label
+              >
+            </div>
+            <div class="flex items-start gap-2 text-[12px] text-[#555555]">
+              <input
+                type="checkbox"
+                id="commercial-sale"
+                name="property"
+                class="mt-[2px]"
+              />
+              <label for="commercial-sale"
+                >Commercial Property for Sale | 9548</label
+              >
+            </div>
+            <div class="flex items-start gap-2 text-[12px] text-[#555555]">
+              <input
+                type="checkbox"
+                id="event-centres"
+                name="property"
+                class="mt-[2px]"
+              />
+              <label for="event-centres"
+                >Event Centres, Venues & Worksta | 9548</label
+              >
+            </div>
+            <div class="flex items-start gap-2 text-[12px] text-[#555555]">
+              <input
+                type="checkbox"
+                id="short-let"
+                name="property"
+                class="mt-[2px]"
+              />
+              <label for="short-let">Short Let Property | 9548</label>
+            </div>
+            <div class="flex items-start gap-2 text-[12px] text-[#555555]">
+              <input
+                type="checkbox"
+                id="sale-land-2"
+                name="property"
+                class="mt-[2px]"
+              />
+              <label for="sale-land-2">Land & Plots for Sale | 9548</label>
+            </div>
+            <div class="flex items-start gap-2 text-[12px] text-[#555555]">
+              <input
+                type="checkbox"
+                id="commercial-rent-2"
+                name="property"
+                class="mt-[2px]"
+              />
+              <label for="commercial-rent-2"
+                >Commercial Property for Rent | 9548</label
+              >
+            </div>
+          </form>
+
+          <h3 class="mt-6 mb-3 text-[14px] font-semibold">Price range</h3>
+          <form class="space-y-2">
+            <div class="flex items-start gap-2 text-[12px] text-[#555555]">
+              <input
+                type="checkbox"
+                id="price-rainge-1"
+                name="price range"
+                class="mt-[2px]"
+              />
+              <label for="price-rainge-1">Under 13 K • 2183 ads</label>
+            </div>
+            <div class="flex items-start gap-2 text-[12px] text-[#555555]">
+              <input
+                type="checkbox"
+                id="price-rainge-2"
+                name="price range"
+                class="mt-[2px]"
+              />
+              <label for="price-rainge-2">13 - 160 K • 2183 ads</label>
+            </div>
+            <div class="flex items-start gap-2 text-[12px] text-[#555555]">
+              <input
+                type="checkbox"
+                id="price-rainge-3"
+                name="price range"
+                class="mt-[2px]"
+              />
+              <label for="price-rainge-3">160 K - 6 M • 2183 ads</label>
+            </div>
+            <div class="flex items-start gap-2 text-[12px] text-[#555555]">
+              <input
+                type="checkbox"
+                id="price-rainge-4"
+                name="price range"
+                class="mt-[2px]"
+              />
+              <label for="price-rainge-4">6 - 55 M • 2183 ads</label>
+            </div>
+            <div class="flex items-start gap-2 text-[12px] text-[#555555]">
+              <input
+                type="checkbox"
+                id="price-rainge-5"
+                name="price range"
+                class="mt-[2px]"
+              />
+              <label for="price-rainge-5">6 - 55 M • 2183 ads</label>
+            </div>
+          </form>
+        </aside>
+      </section>
+
+      <section class="mt-6">
+        <h2 class="mb-4 text-[18px] font-semibold">Trendinfg ads</h2>
+
+        <div
+          class="grid grid-cols-1 gap-4 min-[769px]:grid-cols-2 min-[1025px]:grid-cols-3 min-[1440px]:grid-cols-4"
+        >
+          <a href="detail.html" class="block">
+            <article
+              class="rounded-[24px] bg-white p-2 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+            >
+              <div class="relative">
+                <h4
+                  class="absolute left-3 top-3 z-10 rounded-full bg-green-500 px-3 py-1 text-[10px] text-white"
+                >
+                  VIP TOP+
+                </h4>
+                <img
+                  src="src/img/1.jpg"
+                  alt="card #1"
+                  class="h-[180px] w-full rounded-[18px] object-cover"
+                />
+                <img
+                  src="src/img/frame.png"
+                  alt="frame icon"
+                  class="absolute right-3 bottom-[-14px] h-[44px] w-[44px] rounded-full bg-white p-3 shadow-lg"
+                />
+              </div>
+              <div class="px-2 pt-5">
+                <h4 class="text-[14px] font-medium">
+                  200 Acres Parcel for Sale in Namanga
+                </h4>
+                <p class="mt-1 text-[12px] text-[#777777]">Kajiado, Namanga</p>
+              </div>
+              <div class="flex items-end gap-1 px-2 pt-3">
+                <h1 class="text-[24px] font-semibold text-green-500">1450$</h1>
+                <h4 class="pb-1 text-[12px] text-[#555555]">/ Month</h4>
+              </div>
+              <div
+                class="mt-3 flex justify-between border-t border-[#ececec] px-2 pt-3 text-[11px] text-[#555555]"
+              >
+                <p>5 Bedroom</p>
+                <p>3 bathroom</p>
+                <p>450 Sq.m.</p>
+              </div>
+            </article>
+          </a>
+
+          <a href="detail.html" class="block">
+            <article
+              class="rounded-[24px] bg-white p-2 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+            >
+              <div class="relative">
+                <h4
+                  class="absolute left-3 top-3 z-10 rounded-full bg-green-500 px-3 py-1 text-[10px] text-white"
+                >
+                  VIP TOP+
+                </h4>
+                <img
+                  src="src/img/2.jpg"
+                  alt="card #2"
+                  class="h-[180px] w-full rounded-[18px] object-cover"
+                />
+                <img
+                  src="src/img/frame.png"
+                  alt="frame icon"
+                  class="absolute right-3 bottom-[-14px] h-[44px] w-[44px] rounded-full bg-white p-3 shadow-lg"
+                />
+              </div>
+              <div class="px-2 pt-5">
+                <h4 class="text-[14px] font-medium">
+                  200 Acres Parcel for Sale in Namanga
+                </h4>
+                <p class="mt-1 text-[12px] text-[#777777]">Kajiado, Namanga</p>
+              </div>
+              <div class="flex items-end gap-1 px-2 pt-3">
+                <h1 class="text-[24px] font-semibold text-green-500">1450$</h1>
+                <h4 class="pb-1 text-[12px] text-[#555555]">/ Month</h4>
+              </div>
+              <div
+                class="mt-3 flex justify-between border-t border-[#ececec] px-2 pt-3 text-[11px] text-[#555555]"
+              >
+                <p>5 Bedroom</p>
+                <p>3 bathroom</p>
+                <p>450 Sq.m.</p>
+              </div>
+            </article>
+          </a>
+
+          <a href="detail.html" class="block">
+            <article
+              class="rounded-[24px] bg-white p-2 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+            >
+              <div class="relative">
+                <h4
+                  class="absolute left-3 top-3 z-10 rounded-full bg-green-500 px-3 py-1 text-[10px] text-white"
+                >
+                  VIP TOP+
+                </h4>
+                <img
+                  src="src/img/3.jpg"
+                  alt="card #3"
+                  class="h-[180px] w-full rounded-[18px] object-cover"
+                />
+                <img
+                  src="src/img/frame.png"
+                  alt="frame icon"
+                  class="absolute right-3 bottom-[-14px] h-[44px] w-[44px] rounded-full bg-white p-3 shadow-lg"
+                />
+              </div>
+              <div class="px-2 pt-5">
+                <h4 class="text-[14px] font-medium">
+                  200 Acres Parcel for Sale in Namanga
+                </h4>
+                <p class="mt-1 text-[12px] text-[#777777]">Kajiado, Namanga</p>
+              </div>
+              <div class="flex items-end gap-1 px-2 pt-3">
+                <h1 class="text-[24px] font-semibold text-green-500">1450$</h1>
+                <h4 class="pb-1 text-[12px] text-[#555555]">/ Month</h4>
+              </div>
+              <div
+                class="mt-3 flex justify-between border-t border-[#ececec] px-2 pt-3 text-[11px] text-[#555555]"
+              >
+                <p>5 Bedroom</p>
+                <p>3 bathroom</p>
+                <p>450 Sq.m.</p>
+              </div>
+            </article>
+          </a>
+
+          <a href="detail.html" class="block">
+            <article
+              class="rounded-[24px] bg-white p-2 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+            >
+              <div class="relative">
+                <h4
+                  class="absolute left-3 top-3 z-10 rounded-full bg-green-500 px-3 py-1 text-[10px] text-white"
+                >
+                  VIP TOP+
+                </h4>
+                <img
+                  src="src/img/1.jpg"
+                  alt="card #4"
+                  class="h-[180px] w-full rounded-[18px] object-cover"
+                />
+                <img
+                  src="src/img/frame.png"
+                  alt="frame icon"
+                  class="absolute right-3 bottom-[-14px] h-[44px] w-[44px] rounded-full bg-white p-3 shadow-lg"
+                />
+              </div>
+              <div class="px-2 pt-5">
+                <h4 class="text-[14px] font-medium">
+                  200 Acres Parcel for Sale in Namanga
+                </h4>
+                <p class="mt-1 text-[12px] text-[#777777]">Kajiado, Namanga</p>
+              </div>
+              <div class="flex items-end gap-1 px-2 pt-3">
+                <h1 class="text-[24px] font-semibold text-green-500">1450$</h1>
+                <h4 class="pb-1 text-[12px] text-[#555555]">/ Month</h4>
+              </div>
+              <div
+                class="mt-3 flex justify-between border-t border-[#ececec] px-2 pt-3 text-[11px] text-[#555555]"
+              >
+                <p>5 Bedroom</p>
+                <p>3 bathroom</p>
+                <p>450 Sq.m.</p>
+              </div>
+            </article>
+          </a>
+        </div>
+      </section>
+
+      <section
+        class="mt-8 grid gap-6 min-[1025px]:grid-cols-[1fr_1fr] min-[1025px]:items-start"
+      >
+        <div class="relative rounded-[24px] bg-white p-2 shadow-sm">
+          <img
+            src="src/img/3.jpg"
+            alt=" section 3 main img"
+            class="h-[220px] w-full rounded-[18px] object-cover min-[769px]:h-[320px] min-[1440px]:h-[460px]"
+          />
+
+          <img
+            src="src/img/frame.png"
+            alt="frame icon"
+            class="absolute right-3 bottom-[-14px] h-[44px] w-[44px] rounded-full bg-white p-3 shadow-lg"
+          />
+        </div>
+
+        <div class="rounded-[24px] bg-white p-5 shadow-sm min-[1440px]:p-6">
+          <div
+            class="mb-4 flex flex-wrap items-center justify-between gap-3 text-[11px] text-[#777777]"
+          >
+            <span class="rounded-full bg-green-500 px-3 py-1 text-white">
+              VIP TOP+
+            </span>
+            <div class="flex items-center gap-4">
+              <span>Posted 1 hour ago</span>
+              <span>👁 842 view</span>
+            </div>
+          </div>
+
+          <div>
+            <h1
+              class="text-[20px] font-semibold leading-[1.4] min-[1440px]:text-[24px]"
+            >
+              2bdrm Apartment in Yatch, Thindigua/Kasarini for Rent
+            </h1>
+            <span class="mt-2 block text-[12px] text-[#777777]">
+              Kiambu, Kiambu / Kiambu , Thindigua/Kasarini
+            </span>
+            <p class="mt-4 text-[12px] leading-[1.9] text-[#555555]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+              aliquam, purus sit amet luctus venenatis, lectus magna fringilla
+              urna, porttitor rhoncus dolor purus non enim praesent elementum
+              facilisis leo, vel fringilla est ullamcorper eget
+            </p>
+          </div>
+
+          <div
+            class="mt-5 flex flex-wrap gap-4 border-y border-[#ececec] py-4 text-[12px] text-[#555555]"
+          >
+            <span>Apartament</span>
+            <span>3 bedroom</span>
+            <span>2 bathroom</span>
+            <span>Parking</span>
+          </div>
+
+          <div
+            class="mt-5 grid gap-y-5 text-[18px] min-[769px]:grid-cols-3 min-[769px]:gap-5 min-[769px]:text-[12px]"
+          >
+            <div
+              class="grid grid-cols-2 gap-y-5 min-[769px]:block min-[769px]:space-y-2"
+            >
+              <span class="text-[#777777]">Property address</span>
+              <span
+                class="text-right font-semibold text-[#222222] min-[769px]:block min-[769px]:text-left"
+                >mombasa rd</span
+              >
+
+              <span class="text-[#777777]">Condition</span>
+              <span
+                class="text-right font-semibold text-[#222222] min-[769px]:block min-[769px]:text-left"
+                >Fairly Used</span
+              >
+
+              <span class="text-[#777777]">Condition</span>
+              <span
+                class="text-right font-semibold text-[#222222] min-[769px]:block min-[769px]:text-left"
+                >Fairly Used</span
+              >
+            </div>
+
+            <div
+              class="grid grid-cols-2 gap-y-5 min-[769px]:block min-[769px]:space-y-2"
+            >
+              <span class="text-[#777777]">Facilities</span>
+              <p
+                class="text-right font-semibold leading-[1.8] text-[#222222] min-[769px]:text-left"
+              >
+                24-hour Electricity, Dining Area, En Suite, Hot Water, Kitchen
+                Cabinets, Kitchen Shelf, Microwave, Refrigerator
+              </p>
+            </div>
+
+            <div
+              class="grid grid-cols-2 gap-y-5 min-[769px]:block min-[769px]:space-y-2"
+            >
+              <span class="text-[#777777]">Estate name</span>
+              <span
+                class="text-right font-semibold text-[#222222] min-[769px]:block min-[769px]:text-left"
+                >Next Gen</span
+              >
+
+              <span class="text-[#777777]">Furnishing</span>
+              <span
+                class="text-right font-semibold text-[#222222] min-[769px]:block min-[769px]:text-left"
+                >Semi-Furnished</span
+              >
+
+              <span class="text-[#777777]">Property size</span>
+              <span
+                class="text-right font-semibold text-[#222222] min-[769px]:block min-[769px]:text-left"
+                >220 sq.m.</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="mt-6 flex flex-col gap-4 min-[769px]:flex-row min-[769px]:items-center min-[769px]:justify-between"
+          >
+            <div class="flex items-end gap-1">
+              <span class="text-[28px] font-semibold text-green-500">
+                1450$
+              </span>
+              <span class="pb-1 text-[12px] text-[#555555]">/</span>
+              <span class="pb-1 text-[12px] text-[#555555]">Month</span>
+            </div>
+
+            <div class="flex flex-col gap-3 min-[769px]:flex-row">
+              <button
+                class="h-11 rounded-[12px] bg-green-500 px-5 text-[13px] text-white transition hover:opacity-90"
+              >
+                call
+              </button>
+              <button
+                class="h-11 rounded-[12px] border border-green-500 px-5 text-[13px] text-green-500 transition hover:bg-green-50"
+              >
+                Sent message
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-8">
+        <h1 class="mb-4 text-[22px] font-semibold">Similar ads</h1>
+
+        <div
+          class="grid grid-cols-1 gap-4 min-[769px]:grid-cols-2 min-[1440px]:grid-cols-4"
+        >
+          <a href="detail.html" class="block">
+            <article
+              class="rounded-[24px] bg-white p-2 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+            >
+              <div class="relative">
+                <h4
+                  class="absolute left-3 top-3 z-10 rounded-full bg-green-500 px-3 py-1 text-[10px] text-white"
+                >
+                  VIP TOP+
+                </h4>
+                <img
+                  src="src/img/3.jpg"
+                  alt="card #1"
+                  class="h-[180px] w-full rounded-[18px] object-cover"
+                />
+                <img
+                  src="src/img/frame.png"
+                  alt="frame icon"
+                  class="absolute right-3 bottom-[-14px] h-[44px] w-[44px] rounded-full bg-white p-3 shadow-lg"
+                />
+              </div>
+              <div class="px-2 pt-5">
+                <h4 class="text-[14px] font-medium">
+                  200 Acres Parcel for Sale in Namanga
+                </h4>
+                <p class="mt-1 text-[12px] text-[#777777]">Kajiado, Namanga</p>
+              </div>
+              <div class="flex items-end gap-1 px-2 pt-3">
+                <h1 class="text-[24px] font-semibold text-green-500">1450$</h1>
+                <h4 class="pb-1 text-[12px] text-[#555555]">/ Month</h4>
+              </div>
+              <div
+                class="mt-3 flex justify-between border-t border-[#ececec] px-2 pt-3 text-[11px] text-[#555555]"
+              >
+                <p>5 Bedroom</p>
+                <p>3 bathroom</p>
+                <p>450 Sq.m.</p>
+              </div>
+            </article>
+          </a>
+
+          <a href="detail.html" class="block">
+            <article
+              class="rounded-[24px] bg-white p-2 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+            >
+              <div class="relative">
+                <h4
+                  class="absolute left-3 top-3 z-10 rounded-full bg-green-500 px-3 py-1 text-[10px] text-white"
+                >
+                  VIP TOP+
+                </h4>
+                <img
+                  src="src/img/2.jpg"
+                  alt="card #1"
+                  class="h-[180px] w-full rounded-[18px] object-cover"
+                />
+                <img
+                  src="src/img/frame.png"
+                  alt="frame icon"
+                  class="absolute right-3 bottom-[-14px] h-[44px] w-[44px] rounded-full bg-white p-3 shadow-lg"
+                />
+              </div>
+              <div class="px-2 pt-5">
+                <h4 class="text-[14px] font-medium">
+                  200 Acres Parcel for Sale in Namanga
+                </h4>
+                <p class="mt-1 text-[12px] text-[#777777]">Kajiado, Namanga</p>
+              </div>
+              <div class="flex items-end gap-1 px-2 pt-3">
+                <h1 class="text-[24px] font-semibold text-green-500">1450$</h1>
+                <h4 class="pb-1 text-[12px] text-[#555555]">/ Month</h4>
+              </div>
+              <div
+                class="mt-3 flex justify-between border-t border-[#ececec] px-2 pt-3 text-[11px] text-[#555555]"
+              >
+                <p>5 Bedroom</p>
+                <p>3 bathroom</p>
+                <p>450 Sq.m.</p>
+              </div>
+            </article>
+          </a>
+
+          <a href="detail.html" class="block">
+            <article
+              class="rounded-[24px] bg-white p-2 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+            >
+              <div class="relative">
+                <h4
+                  class="absolute left-3 top-3 z-10 rounded-full bg-green-500 px-3 py-1 text-[10px] text-white"
+                >
+                  VIP TOP+
+                </h4>
+                <img
+                  src="src/img/3.jpg"
+                  alt="card #1"
+                  class="h-[180px] w-full rounded-[18px] object-cover"
+                />
+                <img
+                  src="src/img/frame.png"
+                  alt="frame icon"
+                  class="absolute right-3 bottom-[-14px] h-[44px] w-[44px] rounded-full bg-white p-3 shadow-lg"
+                />
+              </div>
+              <div class="px-2 pt-5">
+                <h4 class="text-[14px] font-medium">
+                  200 Acres Parcel for Sale in Namanga
+                </h4>
+                <p class="mt-1 text-[12px] text-[#777777]">Kajiado, Namanga</p>
+              </div>
+              <div class="flex items-end gap-1 px-2 pt-3">
+                <h1 class="text-[24px] font-semibold text-green-500">1450$</h1>
+                <h4 class="pb-1 text-[12px] text-[#555555]">/ Month</h4>
+              </div>
+              <div
+                class="mt-3 flex justify-between border-t border-[#ececec] px-2 pt-3 text-[11px] text-[#555555]"
+              >
+                <p>5 Bedroom</p>
+                <p>3 bathroom</p>
+                <p>450 Sq.m.</p>
+              </div>
+            </article>
+          </a>
+
+          <a href="detail.html" class="block">
+            <article
+              class="rounded-[24px] bg-white p-2 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+            >
+              <div class="relative">
+                <h4
+                  class="absolute left-3 top-3 z-10 rounded-full bg-green-500 px-3 py-1 text-[10px] text-white"
+                >
+                  VIP TOP+
+                </h4>
+                <img
+                  src="src/img/1.jpg"
+                  alt="card #1"
+                  class="h-[180px] w-full rounded-[18px] object-cover"
+                />
+                <img
+                  src="src/img/frame.png"
+                  alt="frame icon"
+                  class="absolute right-3 bottom-[-14px] h-[44px] w-[44px] rounded-full bg-white p-3 shadow-lg"
+                />
+              </div>
+              <div class="px-2 pt-5">
+                <h4 class="text-[14px] font-medium">
+                  200 Acres Parcel for Sale in Namanga
+                </h4>
+                <p class="mt-1 text-[12px] text-[#777777]">Kajiado, Namanga</p>
+              </div>
+              <div class="flex items-end gap-1 px-2 pt-3">
+                <h1 class="text-[24px] font-semibold text-green-500">1450$</h1>
+                <h4 class="pb-1 text-[12px] text-[#555555]">/ Month</h4>
+              </div>
+              <div
+                class="mt-3 flex justify-between border-t border-[#ececec] px-2 pt-3 text-[11px] text-[#555555]"
+              >
+                <p>5 Bedroom</p>
+                <p>3 bathroom</p>
+                <p>450 Sq.m.</p>
+              </div>
+            </article>
+          </a>
+        </div>
+      </section>
+
+      <footer class="mt-8">
+        <div
+          class="rounded-[24px] bg-green-500 px-6 py-8 text-white min-[769px]:px-10"
+        >
+          <div
+            class="grid grid-cols-2 gap-x-10 gap-y-4 text-[14px] min-[769px]:flex min-[769px]:items-center min-[769px]:justify-between min-[769px]:text-[13px]"
+          >
+            <nav>
+              <ul
+                class="flex flex-col gap-4 min-[769px]:flex-row min-[769px]:gap-8"
+              >
+                <li>
+                  <a
+                    href="index.html"
+                    class="border-b-2 border-transparent pb-1 transition hover:border-white"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="index.html"
+                    class="border-b-2 border-transparent pb-1 transition hover:border-white"
+                  >
+                    Discover
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="index.html"
+                    class="border-b-2 border-transparent pb-1 transition hover:border-white"
+                  >
+                    Contact us
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="index.html"
+                    class="border-b-2 border-transparent pb-1 transition hover:border-white"
+                  >
+                    Sign in
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+            <a
+              href="mailto:Support@Roberts.com"
+              class="hidden border-b-2 border-transparent pb-1 transition hover:border-white min-[769px]:block"
+            >
+              Support@Roberts.com
+            </a>
+
+            <nav>
+              <ul
+                class="flex flex-col items-end gap-4 min-[769px]:flex-row min-[769px]:gap-8"
+              >
+                <li>
+                  <a
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                    class="border-b-2 border-transparent pb-1 transition hover:border-white"
+                  >
+                    Facebook
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/accounts/login/?next=%2F&source=mobile_nav"
+                    target="_blank"
+                    class="border-b-2 border-transparent pb-1 transition hover:border-white"
+                  >
+                    Instagram
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/"
+                    target="_blank"
+                    class="border-b-2 border-transparent pb-1 transition hover:border-white"
+                  >
+                    Youtube
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://x.com/"
+                    target="_blank"
+                    class="border-b-2 border-transparent pb-1 transition hover:border-white"
+                  >
+                    Twitter
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div
+            class="mt-8 border-t border-white/50 pt-6 text-center text-[13px] min-[769px]:mt-6 min-[769px]:pt-5"
+          >
+            © 2022 Robert.co.ke Gibraltar
+          </div>
+        </div>
+
+        <div
+          class="fixed bottom-0 left-0 right-0 z-50 mx-auto w-full max-w-[768px] rounded-t-[28px] border-t border-[#eaeaea] bg-white px-6 pt-4 pb-5 shadow-[0_-4px_20px_rgba(0,0,0,0.08)] min-[769px]:hidden"
+        >
+          <ul class="flex items-end justify-between">
+            <li>
+              <a
+                href="index.html"
+                class="flex flex-col items-center gap-1 text-[14px] text-[#444444]"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-7 w-7"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3 10.5 12 3l9 7.5"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M5.5 10v10h13V10"
+                  />
+                </svg>
+                <span>Home</span>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="index.html"
+                class="flex flex-col items-center gap-1 text-[14px] text-[#444444]"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-7 w-7"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 3 4.5 7.5 12 12l7.5-4.5L12 3Z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4.5 12 12 16.5 19.5 12"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4.5 16.5 12 21l7.5-4.5"
+                  />
+                </svg>
+                <span>Discover</span>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="index.html"
+                class="relative -mt-10 flex flex-col items-center gap-1 text-[14px] text-[#444444]"
+              >
+                <span
+                  class="flex h-[72px] w-[72px] items-center justify-center rounded-[14px] bg-[#29b24e] text-white shadow-md"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-10 w-10"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 5v14M5 12h14"
+                    />
+                  </svg>
+                </span>
+                <span>Sell</span>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="index.html"
+                class="flex flex-col items-center gap-1 text-[14px] text-[#444444]"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-7 w-7"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M7 8h10M7 12h7"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M5 5h14v11H9l-4 4V5Z"
+                  />
+                </svg>
+                <span>Message</span>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="index.html"
+                class="flex flex-col items-center gap-1 text-[14px] text-[#444444]"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-7 w-7"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.5 7.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M5 21a7 7 0 0 1 14 0"
+                  />
+                </svg>
+                <span>Profile</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </main>
+  </body>
 </html>
